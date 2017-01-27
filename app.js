@@ -7,16 +7,20 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
 var index = require('./routes/index');
-var app = express();
 
+// app configuration
+var app = express();
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
+
+// middleware
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// routes
 app.get('/', index.home);
 app.get('/olin', index.school);
 
