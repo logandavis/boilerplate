@@ -1,0 +1,26 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate node.js app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logandavis/boilerplate.git"
+  },
+  "author": "Logan Davis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/logandavis/boilerplate/issues"
+  },
+  "homepage": "https://github.com/logandavis/boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "morgan": "^1.7.0"
+  }
+}
