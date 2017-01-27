@@ -1,3 +1,5 @@
+/*jslint node: true */
+'use strict';
 var home = function(req, res){
   res.render("home");
 };
