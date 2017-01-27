@@ -24,7 +24,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // routes
 app.get('/', index.home);
-app.get('/olin', index.school);
 app.get('/users', index.users);
 
 app.listen(3000);
