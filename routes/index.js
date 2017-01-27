@@ -21,4 +21,3 @@ var users = function(req, res){
 
 module.exports.home = home;
 module.exports.users = users;
-module.exports.school = school;
