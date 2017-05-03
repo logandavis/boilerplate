@@ -3,7 +3,7 @@
 var User = require('../models/userModel.js');
 
 var home = function(req, res){
-  res.render("home");
+  res.send('home');
 };
 
 var users = function(req, res){
@@ -15,7 +15,7 @@ var users = function(req, res){
         users[i].coolness = "not cool";
       }
     }
-    res.render("users", {"users": users});
+    res.status(200).json(users);
   });
 };
 
