@@ -2,8 +2,8 @@
 'use strict';
 var User = require('../models/userModel.js');
 
-var home = function(req, res){
-  res.send('home');
+var hello = function(req, res) {
+  res.json({'h1Text': 'Hello, World!', 'pText': 'This is a boilerplate app.'});
 };
 
 var users = function(req, res){
@@ -19,5 +19,5 @@ var users = function(req, res){
   });
 };
 
-module.exports.home = home;
+module.exports.hello = hello;
 module.exports.users = users;
