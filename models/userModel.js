@@ -1,4 +1,3 @@
-/*jslint node: true */
 'use strict';
 var mongoose = require('mongoose');
 
@@ -9,4 +8,4 @@ var userSchema = mongoose.Schema({
   isCool: Boolean
 });
 
-module.exports = mongoose.model("user", userSchema);
+module.exports = mongoose.model('user', userSchema);
